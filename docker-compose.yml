@@ -1,0 +1,12 @@
+version: "3"
+services:
+  api1:
+    build: ./api
+    ports:
+      - "8000:8080"
+    hostname: "api"
+  api2:
+    build: ./api2
+    ports:
+      - "8001:8080"
+
